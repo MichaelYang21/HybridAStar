@@ -1,0 +1,20 @@
+HYBRID_BREADTH_FIRST_H_	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^#define HYBRID_BREADTH_FIRST_H_$/;"	macro	line:2
+HBF	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^class HBF {$/;"	class	line:12
+NUM_THETA_CELLS	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^	int NUM_THETA_CELLS = 90;$/;"	member	line:15	class:HBF	access:public
+SPEED	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^	double SPEED = 1.45;$/;"	member	line:16	class:HBF	access:public
+LENGTH	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^	double LENGTH = 0.5;$/;"	member	line:17	class:HBF	access:public
+maze_s	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^	struct maze_s {$/;"	struct	line:19	class:HBF	access:public
+g	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^		int g;	\/\/ iteration$/;"	member	line:21	struct:HBF::maze_s	access:public
+x	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^		double x;$/;"	member	line:22	struct:HBF::maze_s	access:public
+y	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^		double y;$/;"	member	line:23	struct:HBF::maze_s	access:public
+theta	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^		double theta;$/;"	member	line:24	struct:HBF::maze_s	access:public
+maze_path	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^	struct maze_path {$/;"	struct	line:27	class:HBF	access:public
+closed	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^		vector< vector< vector<int> > > closed;$/;"	member	line:29	struct:HBF::maze_path	access:public
+came_from	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^		vector< vector< vector<maze_s> > > came_from;$/;"	member	line:30	struct:HBF::maze_path	access:public
+HBF	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^ 	HBF();$/;"	prototype	line:39	class:HBF	access:public	signature:()
+~HBF	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^ 	virtual ~HBF();$/;"	prototype	line:44	class:HBF	access:public	implementation:virtual	signature:()	returns:virtual 
+theta_to_stack_number	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^ 	int theta_to_stack_number(double theta);$/;"	prototype	line:47	class:HBF	access:public	signature:(double theta)	returns:int 
+idx	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^  	int idx(double float_num);$/;"	prototype	line:49	class:HBF	access:public	signature:(double float_num)	returns:int 
+expand	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^  	vector<maze_s> expand(maze_s state);$/;"	prototype	line:51	class:HBF	access:public	signature:(maze_s state)	returns:vector <maze_s> 
+search	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^  	maze_path search(vector< vector<int> > grid, vector<double> start, vector<int> goal);$/;"	prototype	line:53	class:HBF	access:public	signature:(vector< vector<int> > grid, vector<double> start, vector<int> goal)	returns:maze_path 
+reconstruct_path	C:\GitHub\HybridAStar\HybridAStar\hybrid_breadth_first.h	/^  	vector<maze_s> reconstruct_path(vector< vector< vector<maze_s> > > came_from, vector<double> start, HBF::maze_s final);$/;"	prototype	line:55	class:HBF	access:public	signature:(vector< vector< vector<maze_s> > > came_from, vector<double> start, HBF::maze_s final)	returns:vector <maze_s> 
